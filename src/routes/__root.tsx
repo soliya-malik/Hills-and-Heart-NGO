@@ -117,7 +117,11 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <SiteNav transparentOverHero />
+      <main id="main">
+        <Outlet />
+      </main>
+      <SiteFooter />
     </QueryClientProvider>
   );
 }
