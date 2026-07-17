@@ -80,7 +80,7 @@ function PillarPage() {
             What we actually do, week to week.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {p.entries.map((e, i) => (
+            {p.entries.map((e: { name: string; story: string }, i: number) => (
               <Reveal key={e.name} delay={i * 80}>
                 <div className="rounded-3xl bg-white p-8 h-full shadow-[var(--shadow-card)]">
                   <div className="font-display text-4xl font-extrabold text-brand-mountain/30">0{i + 1}</div>
