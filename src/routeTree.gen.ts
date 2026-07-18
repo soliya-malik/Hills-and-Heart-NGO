@@ -9,61 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VolunteerRouteImport } from './routes/volunteer'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as PartnersRouteImport } from './routes/partners'
-import { Route as ImpactRouteImport } from './routes/impact'
-import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as StoriesIndexRouteImport } from './routes/stories.index'
-import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as ImpactRouteImport } from './routes/impact'
+import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as VolunteerRouteImport } from './routes/volunteer'
 import { Route as EventsIndexRouteImport } from './routes/events.index'
-import { Route as StoriesSlugRouteImport } from './routes/stories.$slug'
-import { Route as ProgramsPillarRouteImport } from './routes/programs.$pillar'
 import { Route as EventsSlugRouteImport } from './routes/events.$slug'
+import { Route as ProgramsIndexRouteImport } from './routes/programs.index'
+import { Route as ProgramsPillarRouteImport } from './routes/programs.$pillar'
+import { Route as StoriesIndexRouteImport } from './routes/stories.index'
+import { Route as StoriesSlugRouteImport } from './routes/stories.$slug'
 
-const VolunteerRoute = VolunteerRouteImport.update({
-  id: '/volunteer',
-  path: '/volunteer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PartnersRoute = PartnersRouteImport.update({
-  id: '/partners',
-  path: '/partners',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImpactRoute = ImpactRouteImport.update({
-  id: '/impact',
-  path: '/impact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -71,19 +36,44 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StoriesIndexRoute = StoriesIndexRouteImport.update({
-  id: '/stories/',
-  path: '/stories/',
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProgramsIndexRoute = ProgramsIndexRouteImport.update({
-  id: '/programs/',
-  path: '/programs/',
+const ImpactRoute = ImpactRouteImport.update({
+  id: '/impact',
+  path: '/impact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnersRoute = PartnersRouteImport.update({
+  id: '/partners',
+  path: '/partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolunteerRoute = VolunteerRouteImport.update({
+  id: '/volunteer',
+  path: '/volunteer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventsIndexRoute = EventsIndexRouteImport.update({
@@ -91,9 +81,14 @@ const EventsIndexRoute = EventsIndexRouteImport.update({
   path: '/events/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StoriesSlugRoute = StoriesSlugRouteImport.update({
-  id: '/stories/$slug',
-  path: '/stories/$slug',
+const EventsSlugRoute = EventsSlugRouteImport.update({
+  id: '/events/$slug',
+  path: '/events/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramsIndexRoute = ProgramsIndexRouteImport.update({
+  id: '/programs/',
+  path: '/programs/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgramsPillarRoute = ProgramsPillarRouteImport.update({
@@ -101,9 +96,14 @@ const ProgramsPillarRoute = ProgramsPillarRouteImport.update({
   path: '/programs/$pillar',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EventsSlugRoute = EventsSlugRouteImport.update({
-  id: '/events/$slug',
-  path: '/events/$slug',
+const StoriesIndexRoute = StoriesIndexRouteImport.update({
+  id: '/stories/',
+  path: '/stories/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoriesSlugRoute = StoriesSlugRouteImport.update({
+  id: '/stories/$slug',
+  path: '/stories/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -240,60 +240,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/volunteer': {
-      id: '/volunteer'
-      path: '/volunteer'
-      fullPath: '/volunteer'
-      preLoaderRoute: typeof VolunteerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/partners': {
-      id: '/partners'
-      path: '/partners'
-      fullPath: '/partners'
-      preLoaderRoute: typeof PartnersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/impact': {
-      id: '/impact'
-      path: '/impact'
-      fullPath: '/impact'
-      preLoaderRoute: typeof ImpactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -303,25 +254,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stories/': {
-      id: '/stories/'
-      path: '/stories'
-      fullPath: '/stories/'
-      preLoaderRoute: typeof StoriesIndexRouteImport
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/programs/': {
-      id: '/programs/'
-      path: '/programs'
-      fullPath: '/programs/'
-      preLoaderRoute: typeof ProgramsIndexRouteImport
+    '/impact': {
+      id: '/impact'
+      path: '/impact'
+      fullPath: '/impact'
+      preLoaderRoute: typeof ImpactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partners': {
+      id: '/partners'
+      path: '/partners'
+      fullPath: '/partners'
+      preLoaderRoute: typeof PartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volunteer': {
+      id: '/volunteer'
+      path: '/volunteer'
+      fullPath: '/volunteer'
+      preLoaderRoute: typeof VolunteerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/events/': {
@@ -331,11 +317,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EventsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stories/$slug': {
-      id: '/stories/$slug'
-      path: '/stories/$slug'
-      fullPath: '/stories/$slug'
-      preLoaderRoute: typeof StoriesSlugRouteImport
+    '/events/$slug': {
+      id: '/events/$slug'
+      path: '/events/$slug'
+      fullPath: '/events/$slug'
+      preLoaderRoute: typeof EventsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs/': {
+      id: '/programs/'
+      path: '/programs'
+      fullPath: '/programs/'
+      preLoaderRoute: typeof ProgramsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/programs/$pillar': {
@@ -345,11 +338,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProgramsPillarRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/events/$slug': {
-      id: '/events/$slug'
-      path: '/events/$slug'
-      fullPath: '/events/$slug'
-      preLoaderRoute: typeof EventsSlugRouteImport
+    '/stories/': {
+      id: '/stories/'
+      path: '/stories'
+      fullPath: '/stories/'
+      preLoaderRoute: typeof StoriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stories/$slug': {
+      id: '/stories/$slug'
+      path: '/stories/$slug'
+      fullPath: '/stories/$slug'
+      preLoaderRoute: typeof StoriesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -376,3 +376,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

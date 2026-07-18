@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/hills-hearts-logo.png.asset.json";
 import { NAV_LINKS } from "@/lib/site-data";
 
 type Props = { transparentOverHero?: boolean };
@@ -45,11 +44,11 @@ export function SiteNav({ transparentOverHero = false }: Props) {
         <div className="container-hh flex h-[76px] items-center justify-between gap-6">
           <Link to="/" aria-label="Hills & Hearts Foundation — Home" className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src="/hills-hearts-logo-final.png"
               alt="Hills & Hearts Foundation official logo"
-              width={220}
-              height={72}
-              className="h-12 w-auto md:h-14"
+              width={338}
+              height={110}
+              className="h-[84px] w-auto md:h-[104px]"
             />
           </Link>
 

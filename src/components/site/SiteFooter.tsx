@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Twitter, Mail, MapPin } from "lucide-react";
-import logoAsset from "@/assets/hills-hearts-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -10,11 +9,11 @@ export function SiteFooter() {
           <div className="md:col-span-5">
             <div className="inline-block rounded-2xl bg-white p-4">
               <img
-                src={logoAsset.url}
+                src="/hills-hearts-logo-final.png"
                 alt="Hills & Hearts Foundation logo"
-                width={260}
-                height={90}
-                className="h-16 w-auto"
+                width={390}
+                height={130}
+                className="h-[104px] w-auto"
               />
             </div>
             <p className="mt-6 font-display text-xl leading-snug text-white text-balance">
