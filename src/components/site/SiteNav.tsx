@@ -69,6 +69,9 @@ export function SiteNav({ transparentOverHero = false }: Props) {
             <Link to="/volunteer" className="btn btn-primary h-11 px-5 text-[15px]">
               Join us
             </Link>
+            <Link to="/contact" className="btn bg-brand-sunrise text-white hover:opacity-90 h-11 px-5 text-[15px] shadow-md">
+              Donate
+            </Link>
           </div>
 
           <button
@@ -101,13 +104,22 @@ export function SiteNav({ transparentOverHero = false }: Props) {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/volunteer"
-              onClick={() => setOpen(false)}
-              className="btn btn-primary mt-6 self-start"
-            >
-              Join us
-            </Link>
+            <div className="mt-6 flex flex-col gap-3">
+              <Link
+                to="/volunteer"
+                onClick={() => setOpen(false)}
+                className="btn btn-primary self-start"
+              >
+                Join us
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setOpen(false)}
+                className="btn bg-brand-sunrise text-white hover:opacity-90 self-start shadow-md"
+              >
+                Donate
+              </Link>
+            </div>
           </div>
         </div>
       )}

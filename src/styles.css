@@ -73,9 +73,9 @@
   --accent-foreground: #FFFFFF;
   --destructive: #E53935;
   --destructive-foreground: #FFFFFF;
-  --border: #E5E7EB;
-  --input: #E5E7EB;
-  --ring: #71C400;
+  --border: #9CA3AF;
+  --input: #9CA3AF;
+  --ring: #2F8D3A;
   --radius: 16px;
 }
 
@@ -104,11 +104,11 @@
   }
   .font-display { font-family: var(--font-display); }
   ::selection {
-    background: #71C400;
+    background: #2F8D3A;
     color: #FFFFFF;
   }
   :focus-visible {
-    outline: 3px solid #71C400;
+    outline: 2px solid #2F8D3A;
     outline-offset: 2px;
     border-radius: 6px;
   }
@@ -200,8 +200,8 @@
   will-change: transform;
 }
 .card-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(18, 59, 115, 0.22);
 }
 
 /* Image gentle zoom wrapper */
@@ -227,11 +227,11 @@
   white-space: nowrap;
 }
 @utility btn-primary {
-  background: #71C400;
+  background: var(--color-brand-forest);
   color: #FFFFFF;
-  box-shadow: 0 6px 18px -6px rgba(113, 196, 0, 0.6);
+  box-shadow: 0 6px 18px -6px rgba(47, 141, 58, 0.6);
 }
-.btn-primary:hover { transform: scale(1.02); background: #64B000; }
+.btn-primary:hover { transform: scale(1.05); background: #246B2D; }
 @utility btn-secondary {
   background: #FFFFFF;
   color: #2F8D3A;
@@ -241,4 +241,4 @@
 @utility btn-ghost {
   color: #444444;
 }
-.btn-ghost:hover { color: #71C400; }
+.btn-ghost:hover { color: var(--color-brand-forest); }

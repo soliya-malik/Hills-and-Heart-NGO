@@ -22,7 +22,7 @@ export function PageHero({
     navy: "text-brand-navy",
   }[accent];
   return (
-    <section className="relative overflow-hidden bg-white pt-32 pb-16 md:pt-40 md:pb-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-brand-softgray/50 to-white pt-28 pb-12 md:pt-36 md:pb-16">
       <div className="container-hh relative">
         <nav aria-label="Breadcrumb" className="mb-6 text-sm text-brand-charcoal/70">
           <Link to="/" className="hover:text-brand-mountain">Home</Link>
