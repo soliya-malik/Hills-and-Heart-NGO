@@ -18,6 +18,7 @@ build/
 .vinxi
 .tanstack/**
 .nitro
+.vercel
 
 # Environment files and secrets
 .env
